@@ -75,12 +75,12 @@ class GameStatus
               })
   end
 
-  def self.from_yaml(string)
-    data = YAML.load string
-    p data
-    new(data[:elements_in_correct], data[:no_of_guesses], data[:wrong_guesses],data[:random_array])
-  end
-end
+#   def self.from_yaml(string)
+#     data = YAML.load string
+#     p data
+#     new(data[:elements_in_correct], data[:no_of_guesses], data[:wrong_guesses],data[:random_array])
+#   end
+# end
 
 def check_winner(arr, arr_randomword)
   return 1 if arr == arr_randomword
